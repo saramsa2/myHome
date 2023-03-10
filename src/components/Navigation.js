@@ -1,21 +1,19 @@
-import React from 'react';
-import { Nav } from 'react-bootstrap';
+import React, { Fragment } from 'react';
+import { Container, Nav, Navbar } from 'react-bootstrap';
 
-const Navigation = () => {
-  return (    
-    <Nav variant="tabs" defaultActiveKey="/home">
-      <Nav.Item>
-        <Nav.Link href="/">Portfolios</Nav.Link>
-      </Nav.Item>
-      <Nav.Item>
-        <Nav.Link href='Travel'>Travel</Nav.Link>
-      </Nav.Item>
-      <Nav.Item>
-        <Nav.Link eventKey="disabled" disabled>
-          Disabled
-        </Nav.Link>
-      </Nav.Item>
-    </Nav>
+const Navigation = ({children}) => {
+  return ( 
+    <Fragment>  
+      <div className='col-12'></div>
+      <Navbar bg="primary" variant="dark">
+        <Nav className='me-auto'>
+          <Nav.Link href='Portfolio'>Portfolios</Nav.Link>
+          <Nav.Link href='Travel' >Travel</Nav.Link>
+          <Nav.Link href='Profile' >Profile</Nav.Link>
+        </Nav>
+      </Navbar>
+      <Container>{children}</Container>
+    </Fragment>    
   );
 };
 
