@@ -6,12 +6,10 @@ import Travel from './pages/Travel';
 import Profile from './pages/Profile';
 
 function App() {
-  return (
-    // <Navigation>
-    //   <Routes>
-    //     <Route path='/' element={<Portfolios />}></Route>
-    //   </Routes>
-    // </Navigation>
+  // useEffect(() => {
+  //   document.title = "Chulmin Hwang homepage";
+  // }, []);
+  return (    
     <div className="App">
       <Navigation>
         <Routes>
