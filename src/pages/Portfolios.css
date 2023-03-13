@@ -7,8 +7,9 @@
   min-width: 1000px;
   display: flex;
   justify-content: space-around;
-  align-items: center;
+  align-items: top;
   margin: 0 auto;
+  margin-top: 1rem;
 }
 
 .border {
