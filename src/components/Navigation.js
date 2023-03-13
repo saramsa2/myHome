@@ -3,10 +3,9 @@ import { Container, Nav, Navbar } from 'react-bootstrap';
 
 const Navigation = ({children}) => {
   return ( 
-    <Fragment>  
-      <div className='col-12'></div>
-      <Navbar bg="primary" variant="dark">
-        <Nav className='me-auto'>
+    <Fragment>       
+      <Navbar bg="primary justify-content-" variant="dark">
+        <Nav className='m-auto'>
           <Nav.Link href='Portfolio'>Portfolios</Nav.Link>
           <Nav.Link href='Travel' >Travel</Nav.Link>
           <Nav.Link href='Profile' >Profile</Nav.Link>
